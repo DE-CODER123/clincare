@@ -43,7 +43,7 @@ export default function BookAppointment() {
 
   
   const resetModal = async () => {
-    await Promise.all(queryClient.invalidateQueries({ queryKey: ["getPatientsAppointments"] });
+    await Promise.all(queryClient.invalidateQueries({ queryKey: ["getPatientsAppointments"] })
     setIsOpen(false);
     queryClient.invalidateQueries({ queryKey: ["getAllAppointments"] });
   };

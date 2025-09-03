@@ -42,7 +42,7 @@ export default function AppRoutes() {
     {
       element: (
         <Suspense fallback={<LazyLoader />}>
-          <PublicRoutes accessToken={accessToken}>
+          <PublicRoutes accessToken={accessToke
             <RootLayout />
           </PublicRoutes>
         </Suspense>
